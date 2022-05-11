@@ -75,6 +75,20 @@ body {
 .container header nav ul li {
   list-style: none;
   margin: 10px;
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-transition: all ease 400ms;
+  transition: all ease 400ms;
+  cursor: pointer;
+}
+
+.container header nav ul li:hover {
+  color: #ea1d22;
 }
 
 .container header div {
@@ -99,6 +113,9 @@ body {
 .youtube,
 .twitter {
   margin: 0 8px;
+  background: transparent;
+  border: none;
+  outline: none;
 }
 
 .facebook img,
@@ -130,6 +147,77 @@ main .content > img {
 main .content p {
   max-width: 50%;
   margin-top: 18px;
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #959698;
+}
+
+main .content .buttons {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .content .buttons button {
+  border: none;
+  outline: none;
+  width: 210px;
+  height: 54px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all ease-out 400ms;
+  transition: all ease-out 400ms;
+  border-radius: 3px;
+}
+
+main .content .buttons button:first-child {
+  background: #ea1d22;
+  border: solid 2px transparent;
+  margin-right: 10px;
+}
+
+main .content .buttons button:last-child {
+  background: transparent;
+  border: solid 2px #ea1d22;
+}
+
+main .content .buttons button img {
+  width: 32px;
+  resize: both;
+  margin-right: 10px;
+}
+
+main .content .buttons button h6 {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 main .main-image {
